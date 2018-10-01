@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 
+
 /**
  * ViewEnrollments Controller
  *
@@ -41,12 +42,6 @@ class ViewEnrollmentsController extends AppController
         $ViEnTable=$this->loadmodel('ViewEnrollments');
         $viewEnrollment = $ViEnTable->getViewEnrollment($id);
         $this->set('viewEnrollment', $viewEnrollment);
-
-        /*$viewEnrollment = $this->ViewEnrollments->get($id, [
-            'contain' => ['Enrollments', 'Students', 'Subjects']
-        ]);
-
-        $this->set('viewEnrollment', $viewEnrollment);*/
     }
 
 }

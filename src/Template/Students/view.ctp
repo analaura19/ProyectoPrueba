@@ -58,7 +58,7 @@
                 <td><?= h($enrollments->subject_id) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'Enrollments', 'action' => 'view', $enrollments->enrollments_id]) ?>
-                    </td>
+                </td>
             </tr>
             <?php endforeach; ?>
         </table>

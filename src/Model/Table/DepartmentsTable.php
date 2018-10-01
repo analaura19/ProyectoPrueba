@@ -1,11 +1,10 @@
 <?php
 namespace App\Model\Table;
-
+use Cake\Datasource\ConnectionManager;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
-use Cake\Datasource\ConnectionManager;
 
 /**
  * Departments Model
@@ -65,7 +64,6 @@ class DepartmentsTable extends Table
     {
         $connet = ConnectionManager::get('default');
         $connet->execute("call deparments_insert ('$name',$budget)");
-        /*$connet->execute("call deparments_insert ('$name',$budget");*/
+
     }
-   
 }

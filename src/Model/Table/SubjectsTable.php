@@ -61,7 +61,8 @@ class SubjectsTable extends Table
 
         $validator
             ->integer('credits')
-            ->allowEmpty('credits');
+            ->requirePresence('credits', 'create')
+            ->notEmpty('credits');
 
         return $validator;
     }

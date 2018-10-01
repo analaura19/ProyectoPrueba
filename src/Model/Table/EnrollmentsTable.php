@@ -61,11 +61,12 @@ class EnrollmentsTable extends Table
             ->allowEmpty('enrollments_id', 'create');
 
         $validator
-            ->decimal('grade', 2)
-            ->lessThanOrEqual('grade', 9.99, 'El valor debe ser menor a  9.99.')
-            ->greaterThanOrEqual('grade', 4.00, 'El valor debe ser mayor a  4.00.')
+            ->decimal('grade',2)
+            ->lessThanOrEqual('grade', 9.99, 'El valor debe ser menor a 9.99 .')
+            ->greaterThanOrEqual('grade', 4.00, 'El valor debe ser mayor a 4.0 .')
             ->allowEmpty('grade');
-
+        /*debug($validator);
+        die();*/
         return $validator;
     }
 

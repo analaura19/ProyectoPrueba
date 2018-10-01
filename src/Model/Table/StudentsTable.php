@@ -69,7 +69,7 @@ class StudentsTable extends Table
             ->allowEmpty('enrollment_date');
 
         $validator
-            ->email('email', 'Formato de email no válido.')
+            ->email('email','Formato de email no válido.')
             ->maxLength('email', 120)
             ->allowEmpty('email');
 

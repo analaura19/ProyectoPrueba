@@ -82,16 +82,15 @@ class ViewEnrollmentsTable extends Table
         return $rules;
     }
 
-
+    
     public function getViewEnrollment($id)
     {
         $r = $this->find()
-        ->where(['enrollments_id'=>$id])
-        ->toList();
+                ->where(['enrollments_id'=>$id])
+                ->toList();
         /** la consulta de arriba devuelve un vector de objetos y nos interesa el objeto así que
-        * el valor 0 del vector es lo que nos interesa devolver.
-        */
+         * el valor 0 del vector es lo que nos interesa devolver.
+         */
         return $r[0];
     }
-   
 }

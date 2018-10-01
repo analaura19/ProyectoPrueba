@@ -44,7 +44,7 @@ class StudentsFixture extends TestFixture
                 'students_id' => 1,
                 'first_name' => 'Lorem ipsum dolor sit amet',
                 'last_name' => 'Lorem ipsum dolor sit amet',
-                'enrollment_date' => '2018-08-22',
+                'enrollment_date' => '2018-08-17',
                 'email' => 'Lorem ipsum dolor sit amet'
             ],
         ];
