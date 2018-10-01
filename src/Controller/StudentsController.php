@@ -6,7 +6,6 @@ use App\Controller\AppController;
 /**
  * Students Controller
  *
- * @property \App\Model\Table\StudentsTable $Students
  *
  * @method \App\Model\Entity\Student[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
@@ -37,7 +36,6 @@ class StudentsController extends AppController
         $student = $this->Students->get($id, [
             'contain' => ['Enrollments']
         ]);
-
         $this->set('student', $student);
     }
 

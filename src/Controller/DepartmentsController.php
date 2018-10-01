@@ -54,11 +54,10 @@ class DepartmentsController extends AppController
             
             $DepTable =$this->loadmodel('Departments');
             $DepTable->insertDepartment($department->name,$department->budget);
-            
-            /*if ($this->Departments->save($department)) {*/
-                $this->Flash->success(__('The department has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+            /*if ($this->Departments->save($department)) {*/
+            $this->Flash->success(__('The department has been saved.')); 
+            return $this->redirect(['action' => 'index']);
             //}
             //$this->Flash->error(__('The department could not be saved. Please, try again.'));
         }

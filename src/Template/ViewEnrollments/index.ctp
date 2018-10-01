@@ -10,7 +10,7 @@
         <li><?= $this->Html->link(__('List Students'), ['controller' => 'Students', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Subjects'), ['controller' => 'Subjects', 'action' => 'index']) ?></li>
     </ul>
-</nav>
+</nav>  
 <div class="enrollments index large-9 medium-8 columns content">
     <h3><?= __('Enrollments') ?></h3>
     <table cellpadding="0" cellspacing="0">
